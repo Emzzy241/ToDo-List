@@ -53,14 +53,49 @@ Test: It will  check if the method for adding tasks is truly adding tasks to our
 
 
 Code:
-    let allTasks = new ToDoList();
     let testToDo3 = new Task("Oreoluwa Sefunmi Mobolaji", "Read my books", "29/08/22", "3hrs 20 minutes", "I love reading", "Read your books, get a scholarship and make mama and papa proud");
 
     allTasks.addTask(testToDo3);
 
-    Let testToDo4 = new Task("Zanaz Aderali Ema", "Read my books", "29/08/22", "3hrs 20 minutes", "I love reading", "Read your books, get a scholarship and make mama and papa proud");
+    let testToDo4 = new Task("Zanaz Aderali Ema", "Read my books", "29/08/22", "3hrs 20 minutes", "I love reading", "Read your books, get a scholarship and make mama and papa proud");
 
     allTasks.addTask(testToDo4);
 
 
-<!-- Now our lovely method works fine, we can even add in more tasks and our ToDoList database will accomodate it -->
+<!-- Now our lovely method works fine, if you use allTasks; you see our curent id increased, as we see the id beside it we see the task and we can also access any detail of our choice by: 
+allTasks.tasks[1]; or allTasks.tasks["1"];
+
+
+ we can even add in more tasks and our ToDoList database will accomodate it -->
+
+
+<!-- Next is a new method for finding contacts -->
+
+
+Describe: A method for finding tasks in our database
+
+Test: It will use the id of our task and check to see if its present in our database
+
+Code: 
+    allTasks.addTask(testToDo3);
+
+    let testToDo4 = new Task("Zanaz Aderali Ema", "Read my books", "29/08/22", "3hrs 20 minutes", "I love reading", "Read your books, get a scholarship and make mama and papa proud");
+
+<!-- When we check now: we see that all of this are present in our database now -->
+    allTasks.findTask(1);
+    allTasks.findTask(2);
+    allTasks.findTask(3);
+    allTasks.findTask(4);
+
+<!-- Quick note: there are two ways we can find tasksin our database now
+1: allTasks.tasks[1]; or allTasks.tasks["1"];
+2. allTasks.findTask(1); or allTasks.findTask("1");-->
+
+
+
+<!-- The last method now for our database is a method for deleting Tasks -->
+
+Describe: A method for deleting tasks from our database
+
+Test: It will check to see if the task we want to delete is in our database, delete it if its there and if its not there, return false
+

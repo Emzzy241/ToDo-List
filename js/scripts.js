@@ -28,7 +28,15 @@ ToDoList.prototype.assignId = function(){
     return this.currentId; /* This function just increases this.currentId in our database by 1 whenever its been called, it never interferes with our addTask() function */
 };
 
-// The first constructor is for hoe we will be adding in new tasks, a text would be written for it and it must be passed
+// Our function says that it should return the id for us if its found or else return false
+ToDoList.prototype.findTask = function(id){
+    if(this.tasks[id] !== undefined){
+        return this.tasks[id];
+    }
+    return false;
+}
+
+// The first constructor is the format on how we will be adding in new tasks, a text would be written for it and it must be passed
 
 
 function Task(personsName, personsTask, dateOfTask, timeTaskWillTake, brieflyDescribeTask, motivationOnTask){
