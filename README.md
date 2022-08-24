@@ -77,7 +77,10 @@ Describe: A method for finding tasks in our database
 Test: It will use the id of our task and check to see if its present in our database
 
 Code: 
+    allTasks.addTask(testToDo1);
+    allTasks.addTask(testToDo2);
     allTasks.addTask(testToDo3);
+    allTasks.addTask(testToDo4);
 
     let testToDo4 = new Task("Zanaz Aderali Ema", "Read my books", "29/08/22", "3hrs 20 minutes", "I love reading", "Read your books, get a scholarship and make mama and papa proud");
 
@@ -86,6 +89,12 @@ Code:
     allTasks.findTask(2);
     allTasks.findTask(3);
     allTasks.findTask(4);
+
+Expected Output: 
+    true
+    true
+    true
+    true
 
 <!-- Quick note: there are two ways we can find tasksin our database now
 1: allTasks.tasks[1]; or allTasks.tasks["1"];
@@ -99,3 +108,15 @@ Describe: A method for deleting tasks from our database
 
 Test: It will check to see if the task we want to delete is in our database, delete it if its there and if its not there, return false
 
+Code: 
+    let testToDo4 = new Task("Zanaz Aderali Ema", "Read my books", "29/08/22", "3hrs 20 minutes", "I love reading", "Read your books, get a scholarship and make mama and papa proud");
+
+    allTask.addTask(4); or allTask.deleteTask("4");
+
+<!-- When we check our database now by: allTasks.tasks;  the testToDo(4) gets deleted -->
+
+Expected Output: The testToDo4 variable gets deleted from our database
+
+
+
+<!-- Completely done with all the tests for my business logic -->
