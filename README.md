@@ -1,3 +1,61 @@
+# TO DO LIST 1.0
+
+#### made by Mojiboye Emmanuel
+
+### An application where you can add in your upcoming tasks and check out each of them
+
+### Technologies Used
+* Git
+* Html
+* CSS
+* BootStrap
+* Javscript 
+* jQuery
+* Bootstrap
+* JavaScript Objects
+* JavaScript Mock databases
+
+
+### Description
+_This application is just like a normal and regular TODO app where you can add in as many of the upcoming tasks you have, you can delete it, edit it and save it: all thanks to my JavaScript Database_
+
+## Setup/Installation
+* _Open the directory._
+* _Click on the index.html file._
+_Note: the website is designed to run on a web browser just be sure you have one. _
+* _That's all the installation process you need to carry out. Have fun while working with this application. If you think its cool, be sure to give the application a thumbs up_
+
+## Known Bugs
+_As at the launching of this Project there are zero bugs in it. But if you do find a bug in it, be sure to notify me via my various social media handles below_
+
+## WEBSITE LINK
+https://github.com/Emzzy241/Mad-Libs
+
+## License 
+Licensed under the GNU General Public License 
+© 2022 _by Mojiboye Emmanuel_ All Rights Reserved.
+
+## Contact
+_Connect with me @Emmanuel.9944 on instagram and on all other social media pages all @Emmanuel Oluwole_
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- All Test for the business Logic would be written below..... With TDD(Test Driven Development) we want to be able to break our project into pieces by doing its business logic first -->
 
 <!-- One quick note is that for now they are no .html files so you might be wondering how and where I would be testing my business Logic functions: Don't worry we can use the Chrome Browser's console and you can also try out other places like the JSFIDDLE.net to test along with me.... Starting now -->
