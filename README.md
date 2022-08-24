@@ -20,3 +20,23 @@ Code:
 Expected Output: 'Mojioye Emmanuel OLuwole'
 
 <!-- Our test passed, moving on to the next -->
+
+<!-- The second test to se if our database really stores our tasks -->
+
+Describe: Making a mock database to be able to store in all our tasks
+
+Test: It will test if our database is working with the Task constructor and if it actually stores in our tasks
+
+Code:
+<!-- Using a global variable for instantiating so this can be reused through out our entire code -->
+<!-- Instantiating our ToDoList database -->
+    let allTasks = new ToDoList();
+
+    let testToDo = new Task("Mojioye Emmanuel OLuwole", "Wash Plates and Spoons", "01/09/22", "20 minutes", "My Mom told me to wash plates", "If you wash those plates today, you get the biggest Meat this night");
+
+    let testToDo2 = new Task("Latifa Falila Adesewa", "Take Younger brother to school", "08/9/22", "50 minutes", "Younger Brother needs to go to School", "Younger Brother wants to study medicine");
+
+<!-- After redefining our variables let us now add them manually -->
+    allTasks.tasks.testToDo = testToDo;
+
+<!-- To add in tasks we just use: "allTasks.tasks.testToDo = testToDo;", how about writing a method to make this easy-->

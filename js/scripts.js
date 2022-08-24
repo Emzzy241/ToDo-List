@@ -24,3 +24,5 @@ function Task(personsName, personsTask, dateOfTask, timeTaskWillTake, brieflyDes
     this.brieflyDescribeTask = brieflyDescribeTask;
     this.motivationOnTask = motivationOnTask;
 }
+
+
