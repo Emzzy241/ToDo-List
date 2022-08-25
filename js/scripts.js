@@ -123,16 +123,16 @@ function displayTask(displayToDoList){
     Object.keys(displayToDoList.tasks).forEach( function(key){
         const oneTask = displayToDoList.findTask(key);
 
-        htmlForTasksInfo += "<li id=" + task.id + ">" + task.personsTask + "  task " + "</li>";
+        htmlForTasksInfo += "<li id=" + oneTask.id + ">" + oneTask.personsTask + "  task " + "</li>";
     });
     console.log(htmlForTasksInfo);
-    myToDoList(htmlForTasksInfo);
+    myToDoList.html(htmlForTasksInfo);
 }
 
 // function for showTasks()
 
 function showTasks(taskId){
-    const oneTask = ToDoList.findTask(taskId);
+    let task = ToDoList.findTask(taskId);
 
     $("#all-tasks-show").show();
     $(".usersName-show").html(task.personsName);
