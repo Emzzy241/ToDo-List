@@ -75,13 +75,13 @@ let allTasks = new ToDoList();
 // Function for editting TO-DO-List
 
 function editTask(id){
-    let theTasks = ToDoList.findTask(id);
+    let theTasks = allTasks.findTask(id);
 
     $("input#personsName").val(theTasks.personsName);
     $("input#taskName").val(theTasks.personsTask);
     $("input#taskDate").val(theTasks.dateOfTask);
     $("input#timeTaskTakes").val(theTasks.timeTaskWillTake);
-    $("input#briefDescriptionAboutTask").val(brieflyDescribeTask);
+    $("input#briefDescriptionAboutTask").val(theTasks.brieflyDescribeTask);
 
     allTasks.deleteTask(id);
     $("#all-tasks-show").hide();
@@ -132,7 +132,7 @@ function displayTask(displayToDoList){
 // function for showTasks()
 
 function showTasks(taskId){
-    let task = ToDoList.findTask(taskId);
+    let task = allTasks.findTask(taskId);
 
     $("#all-tasks-show").show();
     $(".usersName-show").html(task.personsName);
@@ -148,7 +148,7 @@ function showTasks(taskId){
 
     let edButton = $("#editTaskButton");
     edButton.empty();
-    edButton.html("<button class='editBUtton btn btn-success' id=" + task.id + ">Edit</button>");
+    edButton.html("<button class='editButton btn btn-success' id=" + task.id + ">Edit</button>");
 }
 
 // Function for resetting fields

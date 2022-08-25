@@ -9,11 +9,18 @@ body{
     background-color:  rgb(134, 13, 13);
     color: white;
 }
+.container{
+    margin-block-end: 50px;
+}
 
 
 #all-tasks-show{
     display: none;
-    margin-left: 50px;
+    margin-left: 30px;
+}
+#show-tasks{
+    margin-top: 10px;
+    margin-left: 30px;
 }
 
 
