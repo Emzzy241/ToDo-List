@@ -54,13 +54,13 @@ ToDoList.prototype.deleteTask = function (id) {
 // The first constructor is the format on how we will be adding in new tasks, a text would be written for it and it must be passed
 
 
-function Task(personsName, personsTask, dateOfTask, timeTaskWillTake, brieflyDescribeTask, motivationOnTask) {
+function Task(personsName, personsTask, dateOfTask, timeTaskWillTake, brieflyDescribeTask) {
     this.personsName = personsName;
     this.personsTask = personsTask;
     this.dateOfTask = dateOfTask;
     this.timeTaskWillTake = timeTaskWillTake;
     this.brieflyDescribeTask = brieflyDescribeTask;
-    this.motivationOnTask = motivationOnTask;
+    
 }
 
 // Done with all functions for the business Logic, moving on to the userInterface logic

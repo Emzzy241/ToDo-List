@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +11,91 @@
     <script src="./js/jquery-3.6.0.js"></script>
     <script src="./js/scripts.js"></script>
 </head>
+
 <body>
-    
-    
+
+    <u>
+        <center>
+            <h1>To Do List 1.0</h1>
+        </center>
+    </u>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                <h3>Add a Task</h3>
+                <p>Please Fill in the fields:</p>
+
+
+                <form id="tasks-form" class="form-group">
+                    <label for="personsName">User's Name: </label>
+                    <input type="text" id="personsName" class="form-control">
+                    <br>
+
+                    <label for="taskName">Name of the Task: </label>
+                    <input type="text" id="taskName" class="form-control">
+                    <br>
+
+                    <label for="taskDate">Date of the Task: </label>
+                    <input type="text" id="taskDate" class="form-control">
+                    <br>
+
+                    <label for="timeTaskWIllTake">Time the task will take: </label>
+                    <input type="text" id="timeTaskWIllTake" class="form-control">
+                    <br>
+
+                    <label for="briefDescriptionAboutTask">Briefly Describe the Task: </label>
+                    <input type="text" id="briefDescriptionAboutTask" class="form-control">
+                    <br>
+
+
+                    <button type="submit" class="btn btn-success btn-lg">Add</button>
+                    <a href="./index.html" class="btn btn-danger btn-lg">Format!!!</a>
+                </form>
+            <br> <br> <br>
+            </div>
+
+            
+            <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
+                <div class="tasks-place container">
+                    <h3>Your To Do List</h3>
+                    <h6>Click on any TO-Do-List you want to see:</h6>
+                </div>
+
+                <div class="all-tasks">
+
+
+                    <ul id="show-tasks">
+                    </ul>
+
+                    <div id="all-tasks-show">
+                        <h4>Viewing <span class="usersName-show"> </span></h4>
+                        <p>Task Name: <span class="nameOfTask-show"> </span></p>
+                        <p>Task Date: <span class="dateOfTask-show"> </span></p>
+                        <p>Time to complete Task: <span class="timeToCompleteTask-show"> </span></p>
+                        <p>Describing Task: <span class="describeTask-show"> </span></p>
+
+                        <button id="deleteTaskButton" class="btn btn-success"></button>
+                        <button id="editTaskButton" class="btn btn-warning"></button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="footer-bottom"> <br>
+        <p class="copyright">
+            &copy; 2022 <a href="https://www.instagram.com/emmanuel.9944/" class="copyright-link">Emmanuel Mojiboye
+                Oluwole</a> . All Rights Reserved
+        </p>
+    </div>
 
 
 </body>
+
 </html>

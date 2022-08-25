@@ -71,7 +71,7 @@ Test: It will test if users can add in a test to the constructor
 Code: 
     let testToDo = new Task("Mojiboye Emmanuel OLuwole", "Wash Plates and Spoons", "01/09/22", "20 minutes", "My Mom told me to wash plates", "If you wash those plates today, you get the biggest Meat this night");
 
-    let testToDo2 = new Task("Latifa Falila Adesewa", "Take Younger brother to school", "08/9/22", "50 minutes", "Younger Brother needs to go to School", "Younger Brother wants to study medicine");
+    let testToDo2 = new Task("Latifa Falila Adesewa", "Take Younger brother to school", "08/9/22", "50 minutes", "Younger Brother needs to go to School");
 
     testToDo.personsName;
 
@@ -92,7 +92,7 @@ Code:
 
     let testToDo = new Task("Mojioye Emmanuel OLuwole", "Wash Plates and Spoons", "01/09/22", "20 minutes", "My Mom told me to wash plates", "If you wash those plates today, you get the biggest Meat this night");
 
-    let testToDo2 = new Task("Latifa Falila Adesewa", "Take Younger brother to school", "08/9/22", "50 minutes", "Younger Brother needs to go to School", "Younger Brother wants to study medicine");
+    let testToDo2 = new Task("Latifa Falila Adesewa", "Take Younger brother to school", "08/9/22", "50 minutes", "Younger Brother needs to go to School");
 
 <!-- After redefining our variables let us now add them manually -->
     allTasks.tasks.testToDo = testToDo;
@@ -115,7 +115,7 @@ Code:
 
     allTasks.addTask(testToDo3);
 
-    let testToDo4 = new Task("Zanaz Aderali Ema", "Read my books", "29/08/22", "3hrs 20 minutes", "I love reading", "Read your books, get a scholarship and make mama and papa proud");
+    let testToDo4 = new Task("Zanaz Aderali Ema", "Read my books", "29/08/22", "3hrs 20 minutes", "I love reading");
 
     allTasks.addTask(testToDo4);
 
@@ -140,7 +140,7 @@ Code:
     allTasks.addTask(testToDo3);
     allTasks.addTask(testToDo4);
 
-    let testToDo4 = new Task("Zanaz Aderali Ema", "Read my books", "29/08/22", "3hrs 20 minutes", "I love reading", "Read your books, get a scholarship and make mama and papa proud");
+    let testToDo4 = new Task("Zanaz Aderali Ema", "Read my books", "29/08/22", "3hrs 20 minutes", "I love reading");
 
 <!-- When we check now: we see that all of this are present in our database now -->
     allTasks.findTask(1);
@@ -167,7 +167,7 @@ Describe: A method for deleting tasks from our database
 Test: It will check to see if the task we want to delete is in our database, delete it if its there and if its not there, return false
 
 Code: 
-    let testToDo4 = new Task("Zanaz Aderali Ema", "Read my books", "29/08/22", "3hrs 20 minutes", "I love reading", "Read your books, get a scholarship and make mama and papa proud");
+    let testToDo4 = new Task("Zanaz Aderali Ema", "Read my books", "29/08/22", "3hrs 20 minutes", "I love reading");
 
     allTask.addTask(4); or allTask.deleteTask("4");
 
