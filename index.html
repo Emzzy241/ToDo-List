@@ -28,7 +28,7 @@
                 <p>Please Fill in the fields:</p>
 
 
-                <form id="tasks-form" class="form-group">
+                <form id="tasks-form" class="form-group" >
                     <label for="personsName">User's Name: </label>
                     <input type="text" id="personsName" class="form-control">
                     <br>
@@ -41,8 +41,8 @@
                     <input type="text" id="taskDate" class="form-control">
                     <br>
 
-                    <label for="timeTaskWIllTake">Time the task will take: </label>
-                    <input type="text" id="timeTaskWIllTake" class="form-control">
+                    <label for="timeTaskTakes">Time the task will take: </label>
+                    <input type="text" id="timeTaskTakes" class="form-control">
                     <br>
 
                     <label for="briefDescriptionAboutTask">Briefly Describe the Task: </label>
@@ -76,8 +76,12 @@
                         <p>Time to complete Task: <span class="timeToCompleteTask-show"> </span></p>
                         <p>Describing Task: <span class="describeTask-show"> </span></p>
 
-                        <button id="deleteTaskButton" class="btn btn-success"></button>
-                        <button id="editTaskButton" class="btn btn-warning"></button>
+                        <div id="deleteTaskButton" class="btn btn-success"></div>
+                        <div id="editTaskButton" class="btn btn-warning"></div>
+
+                        
+                        <!-- <button id="deleteTaskButton" class="btn btn-success"></button>
+                        <button id="editTaskButton" class="btn btn-warning"></button> -->
                     </div>
                 </div>
 
